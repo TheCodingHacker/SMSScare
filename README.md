@@ -25,6 +25,7 @@ The SMS Scare software has a growing number of modules, but these are the ones c
 * PH Premium Order Scare - Sends target a SMS saying there monthly subscription of PornHub Premium was successfully renewed.
 * Prostitute SMS Scare - Sends target a SMS saying a protitute with a name of your choice will be at there house within the next few mins
 * Console Online Account Suspend SMS Scare - Sends target a SMS saying there PS4/Xbox Account has been suspending for a reason of your choice!
+* Relationship Advice SMS Troll - Sends target a SMS saying they have requested relationship advice!
 * Reveal Prank's - Sends target an SMS saying that a person of your choice was executing the prank.
 
 # Support
@@ -35,7 +36,7 @@ If any help with this is needed or you just need support, come join us on our di
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 6.0   | :white_check_mark: |
+| > 6.0   | :white_check_mark: |
 | < 4.0   | :x:                |
 
 

@@ -31,7 +31,8 @@ def sms():
             3) PH Premium Fake SMS Scare
             4) Prositite Order Fake SMS Scare
             5) Console Online Account Suspend SMS Scare
-            6) Reveal Prank
+            6) Relationship Advice SMS Troll
+            7) Reveal Prank
 
         """)
     smschoice=input("Enter a number: ")
@@ -46,6 +47,8 @@ def sms():
     if(smschoice == "5"):
         consuspend()
     if(smschoice == "6"):
+        relatadvice()
+    if(smschoice == "7"):
         reveal()
 
 def credits():
@@ -331,6 +334,27 @@ def xboxuksend():
     xboxnum="MICROSOFTGB"
     message="Hello, " + name + ": Your Xbox Account has been suspended for " + reason + " this ban will persist for " + days + " days. In the future please refrain from breaking the Microsoft Rules and Guidelines!"
     smssenduk(number, message, xboxnum)
+
+def relatadvice():
+    print("""
+
+        Relationship Advice SMS troll
+
+        1) US Send
+        2) UK Send
+
+    """)
+    choice=input("Choose a number: ")
+    if(choice == "1"):
+        relatadviceus()
+    if(choice == "2"):
+        relatadviceuk()
+
+
+def relatadviceus():
+    name=input("Enter Target Name: ")
+    number=input("Enter Number(Incl. County Code ex. +44 for UK): ")
+
 
 def smssenduk(number, message, num):
     client = Client("" , "")
