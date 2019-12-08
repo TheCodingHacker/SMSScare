@@ -2,8 +2,6 @@ from twilio.rest import Client
 from datetime import date
 import random
 import time
-account_sid = 'ACba0389ebb45415f0ab868aa94cf09d79'
-auth_token = '5a95b8362195af19f0379f51c4c61f8f'
 def main():
     print("""
 
@@ -195,7 +193,7 @@ def revealuk():
             smssenuk(number,message,"+441452260494")
 
 def smssenduk(number, message, num):
-    client = Client(account_sid, auth_token)
+    client = Client(sid_token , auth_token)
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
@@ -206,7 +204,7 @@ def smssenduk(number, message, num):
     print(message.sid)
 
 def smssendus(number, message):
-    client = Client(account_sid, auth_token)
+    client = Client(sid_token, auth_token)
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
