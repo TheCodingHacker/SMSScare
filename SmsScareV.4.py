@@ -194,7 +194,7 @@ def revealuk():
             smssenuk(number,message,"+441452260494")
 
 def smssenduk(number, message, num):
-    client = Client("ACba0389ebb45415f0ab868aa94cf09d79", "5a95b8362195af19f0379f51c4c61f8f")
+    client = Client("", "")
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
@@ -205,7 +205,7 @@ def smssenduk(number, message, num):
     print(message.sid)
 
 def smssendus(number, message):
-    client = Client("ACba0389ebb45415f0ab868aa94cf09d79", "5a95b8362195af19f0379f51c4c61f8f")
+    client = Client("", "")
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
