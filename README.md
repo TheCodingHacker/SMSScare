@@ -17,6 +17,16 @@ You will have to set the API Key and SID Token in the commented areas.
 
 You will also have to change the US and UK Numbers where indicated.
 
+# Features
+
+The SMS Scare software has a growing number of modules, but these are the ones currently implemented:
+* Bank One Time Code Scare - Sends target a fake one time banking code to the users phone, a bank name is prompted for the script to look more real!
+* Fake Order Scare - Sends target a SMS saying a item of your choice is being delivered on the date of your choice!
+* PH Premium Order Scare - Sends target a SMS saying there monthly subscription of PornHub Premium was successfully renewed.
+* Prostitute SMS Scare - Sends target a SMS saying a protitute with a name of your choice will be at there house within the next few mins
+* Reveal Prank's - Sends target an SMS saying that a person of your choice was executing the prank.
+
+
 # Support
 
 If any help with this is needed or you just need support, come join us on our discord. https://discord.gg/CdnDyXJ
