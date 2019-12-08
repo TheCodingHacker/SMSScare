@@ -60,9 +60,9 @@ def bankscare():
     """)
     choice=input("Enter a number: ")
     if(choice == "1"):
-        codescare()
-    if(choice == "2"):
         codescareus()
+    if(choice == "2"):
+        codescare()
 
 def codescare():
     print("Bank One Time Code Scare!")
