@@ -20,3 +20,5 @@ You will also have to change the US and UK Numbers where indicated.
 # Support
 
 If any help with this is needed or you just need support, come join us on our discord. https://discord.gg/CdnDyXJ
+
+Hi
