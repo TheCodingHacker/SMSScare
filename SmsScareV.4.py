@@ -2,7 +2,8 @@ from twilio.rest import Client
 from datetime import date
 import random
 import time
-
+account_sid = 'ACba0389ebb45415f0ab868aa94cf09d79'
+auth_token = '5a95b8362195af19f0379f51c4c61f8f'
 def main():
     print("""
 
@@ -175,7 +176,7 @@ def revealuk():
     print("Reveal the prank!")
     name=input("Enter Target Name:")
     number=input("Enter Number (Incl. Country Code ex. +44 for UK):")
-    message= "Hello, " + name + ". " + "All messages you have recieved from this numer were a prank, Please contact: " + yname + " as he was the one who executed this prank!"
+    message= "Hello, " + name + ". " + "All messages you have recieved from this number were a prank, Please contact: " + yname + " as he was the one who executed this prank!"
     def sender():
         print("""
 
@@ -194,7 +195,7 @@ def revealuk():
             smssenuk(number,message,"+441452260494")
 
 def smssenduk(number, message, num):
-    client = Client("", "")
+    client = Client(account_sid, auth_token)
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
@@ -205,7 +206,7 @@ def smssenduk(number, message, num):
     print(message.sid)
 
 def smssendus(number, message):
-    client = Client("", "")
+    client = Client(account_sid, auth_token)
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
