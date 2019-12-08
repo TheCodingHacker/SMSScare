@@ -23,4 +23,4 @@ If any help with this is needed or you just need support, come join us on our di
 
 #Twilio Information
 
-. You cannot use the trial version of Twilio for this to work properly, as the trial version only allows SMS and Calls from verified numbers.
+* You cannot use the trial version of Twilio for this to work properly, as the trial version only allows SMS and Calls from verified numbers.
