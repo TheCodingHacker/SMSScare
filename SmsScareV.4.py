@@ -169,7 +169,7 @@ def revealus():
     name=input("Enter Target Name: ")
     yname=input("Enter Your Name: ")
     number=input("Enter Number (Incl. Country Code ex. +1 For US): ")
-    message= "Hello, " + name + ". " + "All messages you have recieved from this numer were a prank, Please contact: " + yname + " as he was the one who executed this prank!"
+    message= "Hello, " + name + ". " + "All messages you have recieved from this number were a prank, Please contact: " + yname + " as he was the one who executed this prank!"
     smssendus(number, message)
 
 def revealuk():
