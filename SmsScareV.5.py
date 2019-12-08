@@ -29,6 +29,7 @@ def sms():
             1) Bank One Time Code Scare
             2) Fake Order
             3) PH Premium Fake SMS Scare
+            4) Prositite Order Fake SMS Scare
             4) Reveal Prank
 
         """)
@@ -40,6 +41,8 @@ def sms():
     if(smschoice == "3"):
         phscare()
     if(smschoice == "4"):
+        prossms()
+    if(smschoice == "5"):
         reveal()
 
 def credits():
@@ -173,7 +176,7 @@ def revealus():
 def revealuk():
     print("Reveal the prank!")
     name=input("Enter Target Name:")
-    number=input("Enter Number (Incl. Country Code ex. +44 for UK):")
+    number=input("Enter Number (Incl. Country Code ex. +44 for UK): ")
     message= "Hello, " + name + ". " + "All messages you have recieved from this number were a prank, Please contact: " + yname + " as he was the one who executed this prank!"
     def sender():
         print("""
@@ -192,8 +195,39 @@ def revealuk():
             #Change the UK Number Below
             smssenuk(number,message,"+441452260494")
 
+def prossms():
+    print("""
+
+        Prosititute Fake SMS Scare
+
+        1) US Send
+        2) UK Send
+
+    """)
+    choice=input("Choose a number: ")
+    if(choice == "1"):
+        prossmsuk()
+    if(choice == "2"):
+        prossmsus()
+
+def prossmsus():
+    print("Prostitute Fake SMS Scare US Send")
+    name=input("Enter Target Name: ")
+    number=input("Enter Number (Incl. Country Code ex. +1 for US): ")
+    prosname=input("Enter Prostitute's Name: ")
+    message="Hey " + name + " its " + prosname + " I am on the way to your house now, dont have too much fun without me. I cant wait to see you. Love you"
+    smsendus(number, message)
+
+def prossmsuk():
+    print("Prostitute Fake SMS Scare UK Send :: This Module uses a normal telephone number for functionality!")
+    name=input("Enter Target Name: ")
+    number=input("Enter Number (Incl. Country Code ex. +44 for UK): ")
+    prosname=input("Enter Prostitute's Name: ")
+    message="Hey " + name + " its " + prosname + " I am on the way to your house now, dont have too much fun without me. I cant wait to see you. Love you"
+    smsenduk(number, message, "+441452260494")
+
 def smssenduk(number, message, num):
-    client = Client(sid_token , auth_token)
+    client = Client("" , "")
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
@@ -204,7 +238,7 @@ def smssenduk(number, message, num):
     print(message.sid)
 
 def smssendus(number, message):
-    client = Client(sid_token, auth_token)
+    client = Client("", "")
             #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
