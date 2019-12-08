@@ -190,11 +190,12 @@ def revealuk():
             word=input("Enter Number to Send from (10 LETTER NAME ex. PORNHUBPREM): ")
             smssenuk(number,message,word)
         if(choice == 2):
+            #Change the UK Number Below
             smssenuk(number,message,"+441452260494")
 
 def smssenduk(number, message, num):
     client = Client("ACba0389ebb45415f0ab868aa94cf09d79", "5a95b8362195af19f0379f51c4c61f8f")
-
+            #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
                          body=message,
@@ -205,10 +206,11 @@ def smssenduk(number, message, num):
 
 def smssendus(number, message):
     client = Client("ACba0389ebb45415f0ab868aa94cf09d79", "5a95b8362195af19f0379f51c4c61f8f")
-
+            #Client("Account SID", "API Token")
     message = client.messages \
                     .create(
                          body=message,
+                         # Change the number below
                          from_='+17072025135',
                          to=number
                      )
