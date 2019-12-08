@@ -21,6 +21,6 @@ You will also have to change the US and UK Numbers where indicated.
 
 If any help with this is needed or you just need support, come join us on our discord. https://discord.gg/CdnDyXJ
 
-#Twilio Information
+# Twilio Information
 
 * You cannot use the trial version of Twilio for this to work properly, as the trial version only allows SMS and Calls from verified numbers.
