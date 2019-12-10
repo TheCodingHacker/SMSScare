@@ -239,8 +239,13 @@ def consuspend():
 
         1) PS4
         2) XBOX
-        
+
     """)
+    choice=input("Choose a number: ")
+    if(choice == "1"):
+        ps4uksend()
+    if(choice == "2"):
+        xboxuksend()
 
 
 def smssenduk(number, message, num):
