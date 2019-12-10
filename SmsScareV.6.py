@@ -243,9 +243,66 @@ def consuspend():
     """)
     choice=input("Choose a number: ")
     if(choice == "1"):
+        ps4send()
+    if(choice == "2"):
+        xboxsend()
+
+def ps4send():
+    print("""
+
+        PS4 Account Suspension SMS Scare
+
+        1) US Send
+        2) UK Send
+
+    """)
+    choice=input("Choose a number: ")
+    if(choice == "1"):
+        ps4ussend()
+    if(choice == "2"):
         ps4uksend()
+
+def xboxsend():
+    print("""
+
+        Xbox Account Suspension SMS Scare
+
+        1) US Send
+        2) UK Send
+
+    """)
+    choice=input("Choose a number: ")
+    if(choice == "1"):
+        xboxussend()
     if(choice == "2"):
         xboxuksend()
+
+def ps4ussend():
+    print("""
+
+        PS4 Account Suspension SMS Scare - US Setup
+
+    """)
+    name=input("Enter Target Name: ")
+    number=input("Enter Number (Incl. Country Code ex. +1 for US): ")
+    reason=input("Enter Ban Reason: ")
+    days=input("Enter Ban Length (In Days): ")
+    message="Hello, " + name + ": Your PS4 Account has been suspended for " + reason + " this ban will persist for " + days + " days. In the future please refrain from breaking the Sony Rules and Guidelines!"
+    smssendus(number, message)
+
+def ps4uksend():
+    print("""
+
+        PS4 Account Suspension SMS Scare - UK Setup
+
+    """)
+    name=input("Enter Target Name: ")
+    number=input("Enter Number(Incl. County Code ex. +44 for UK): ")
+    sonynum="SONYPLAYSTAT"
+    reason=input("Enter Ban Reason: ")
+    days=input("Enter Ban length (In Days): ")
+    message="Hello, " + name + ": Your PS4 Account has been suspended for " + reason + " this ban will persist for " + days + " days. In the future please refrain from breaking the Sony Rules and Guidelines!"
+    smsenduk(number, message, sonynum)
 
 
 def smssenduk(number, message, num):
