@@ -30,7 +30,8 @@ def sms():
             2) Fake Order
             3) PH Premium Fake SMS Scare
             4) Prositite Order Fake SMS Scare
-            4) Reveal Prank
+            5) Console Online Account Suspend SMS Scare
+            6) Reveal Prank
 
         """)
     smschoice=input("Enter a number: ")
@@ -43,6 +44,8 @@ def sms():
     if(smschoice == "4"):
         prossms()
     if(smschoice == "5"):
+        consuspend()
+    if(smschoice == "6"):
         reveal()
 
 def credits():
@@ -225,6 +228,20 @@ def prossmsuk():
     prosname=input("Enter Prostitute's Name: ")
     message="Hey " + name + " its " + prosname + " I am on the way to your house now, dont have too much fun without me. I cant wait to see you. Love you"
     smsenduk(number, message, "+441452260494")
+
+
+def consuspend():
+    print("""
+
+        Console Fake SMS Scare!
+
+        Choose a Console Provider
+
+        1) PS4
+        2) XBOX
+        
+    """)
+
 
 def smssenduk(number, message, num):
     client = Client("" , "")
