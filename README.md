@@ -33,6 +33,7 @@ If any help with this is needed or you just need support, come join us on our di
 
 ## Supported Versions
 
+| Version | Supported          |
 | ------- | ------------------ |
 | 6.0   | :white_check_mark: |
 | < 4.0   | :x:                |
