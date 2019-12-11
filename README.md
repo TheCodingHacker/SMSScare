@@ -31,6 +31,13 @@ The SMS Scare software has a growing number of modules, but these are the ones c
 
 If any help with this is needed or you just need support, come join us on our discord. https://discord.gg/CdnDyXJ
 
+## Supported Versions
+
+| ------- | ------------------ |
+| 6.0   | :white_check_mark: |
+| < 4.0   | :x:                |
+
+
 # Twilio Information
 
 * You cannot use the trial version of Twilio for this to work properly, as the trial version only allows SMS and Calls from verified numbers.
