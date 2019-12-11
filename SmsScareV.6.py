@@ -305,6 +305,33 @@ def ps4uksend():
     smsenduk(number, message, sonynum)
 
 
+def xboxussend():
+    print("""
+
+        Xbox Account Suspension SMS Scare - US Setup
+
+    """)
+    name=input("Enter Target Name: ")
+    number=input("Enter number(Incl. Country Code ex. +44 for UK): ")
+    reason=input("Enter Ban Reason: ")
+    days=input("Enter Ban Length (In Days): ")
+    message="Hello, " + name + ": Your Xbox Account has been suspended for " + reason + " this ban will persist for " + days + " days. In the future please refrain from breaking the Microsoft Rules and Guidelines!"
+    smssendus(number, message)
+
+def xboxuksend():
+    print("""
+
+        Xbox Account Suspension SMS Scare - UK Setup
+
+    """)
+    name=input("Enter Target Name: ")
+    number=input("Enter number(Incl. Country Code ex. +44 for UK): ")
+    reason=input("Enter Ban Reason: ")
+    days=input("Enter Ban Length (In Days): ")
+    xboxnum="MICROSOFTGB"
+    message="Hello, " + name + ": Your Xbox Account has been suspended for " + reason + " this ban will persist for " + days + " days. In the future please refrain from breaking the Microsoft Rules and Guidelines!"
+    smssenduk(number, message, xboxnum)
+
 def smssenduk(number, message, num):
     client = Client("" , "")
             #Client("Account SID", "API Token")
