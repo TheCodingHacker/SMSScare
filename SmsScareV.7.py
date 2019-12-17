@@ -353,7 +353,8 @@ def relatadvice():
 
 def relatadviceus():
     name=input("Enter Target Name: ")
-    number=input("Enter Number(Incl. County Code ex. +44 for UK): ")
+    number=input("Enter Number(Incl. County Code ex. +1 for US): ")
+    message = "Hello, " + name + " you have requested out free relationship advice."
 
 
 def smssenduk(number, message, num):
